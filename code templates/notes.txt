@@ -1,0 +1,36 @@
+
+2: date
+
+4: client
+
+7: work outlined in Estimate # 6131-R2 detailed below in this contract.
+
+24: Anticipated start date: September 20, 2021
+
+25: Anticipated completion date: January 17, 2021 (we are planning on being finished with the majority of the work sooner though ordering materials may cause us to be delayed)
+
+27: All of the above work is to be completed in a substantial and workmanlike 
+manner for the sum of ONE HUNDRED TWENTY SEVEN THOUSAND TWENTY AND 00/100 DOLLARS ($127,020.00) 
+There will be minor alterations to the contract sum based on changes during construction. 
+Any alterations or deviation of the work described and as above will be executed upon written 
+order for the same and will be added or deducted from the sum quoted in this contract or will be 
+performed on a time and material basis at $125/man/hour.
+
+29: Is time of the essence in the completion of this contract?  _____Yes  __X___No
+
+32: Deposit: $20,000.00
+
+
+
+notes:
+add photo to document in window 
+auto fill date if not filled
+deposit is 10% of final amount, field for perctnage amount and to add cutsom
+auto fill at 125 for hourly, 
+
+9: allwoanges
+
+C:\Users\caleb\AppData\Roaming\Python\Python310\Scripts
+
+
+

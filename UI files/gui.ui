@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>248</width>
+    <height>511</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>221</width>
+      <height>439</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>            type</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Deposit</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_8</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3" colspan="3">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>        Cost</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3" colspan="3">
+      <widget class="QLineEdit" name="lineEdit_8"/>
+     </item>
+     <item row="5" column="5">
+      <widget class="QLineEdit" name="lineEdit_6"/>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Client</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_2</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QLineEdit" name="lineEdit_3"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Image</string>
+       </property>
+       <property name="buddy">
+        <cstring>pushButton_2</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QLineEdit" name="lineEdit_7"/>
+     </item>
+     <item row="12" column="3" colspan="3">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Add image</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="5">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>estimate Amount</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_6</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="4">
+      <widget class="QLineEdit" name="lineEdit_2"/>
+     </item>
+     <item row="9" column="0" colspan="6">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>                       Allowances</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QLineEdit" name="lineEdit_5"/>
+     </item>
+     <item row="7" column="5">
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="6">
+      <widget class="QTextEdit" name="textEdit_3"/>
+     </item>
+     <item row="11" column="3" colspan="3">
+      <widget class="QTextEdit" name="textEdit_2"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Start Date</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_4</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="5">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Estimate Number</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_3</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="4">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Hourly Rate</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_7</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" colspan="4">
+      <widget class="QLineEdit" name="lineEdit"/>
+     </item>
+     <item row="4" column="0" colspan="3">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>End Date</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_5</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QLineEdit" name="lineEdit_4"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Date</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="5">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Is Time important</string>
+       </property>
+       <property name="buddy">
+        <cstring>checkBox</cstring>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>248</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDocument_Maker">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionExport"/>
+    <addaction name="actionSettings"/>
+   </widget>
+   <addaction name="menuDocument_Maker"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>lineEdit_5</tabstop>
+  <tabstop>lineEdit_6</tabstop>
+  <tabstop>lineEdit_7</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>lineEdit_8</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>textEdit_2</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>textEdit_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
