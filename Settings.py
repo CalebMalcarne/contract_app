@@ -67,10 +67,12 @@ class settingsWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.widget)
         self.pushButton.setObjectName("pushButton")
         self.gridLayout.addWidget(self.pushButton, 6, 1, 1, 3)
+        
+        '''
         self.label = QtWidgets.QLabel(self.widget)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 1, 1, 2)
-
+        '''
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
         self.horizontalSlider.valueChanged.connect(self.updatePercent)
@@ -81,7 +83,7 @@ class settingsWindow(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         self.pushButton.clicked.connect(lambda: self.saveConfig(Form))
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "Settings"))
         self.label_2.setText(_translate("Form", "Window Size"))
         self.comboBox.setItemText(0, _translate("Form", "Large"))
         self.comboBox.setItemText(1, _translate("Form", "Medium"))
@@ -92,7 +94,7 @@ class settingsWindow(object):
         self.label_7.setText(_translate("Form", "%"))
         self.label_4.setText(_translate("Form", "Default Deposit Percentage"))
         self.pushButton.setText(_translate("Form", "Save"))
-        self.label.setText(_translate("Form", "Settings"))
+        #self.label.setText(_translate("Form", "Settings"))
         self.lineEdit.setText(self.config["template_path"])
         self.lineEdit_2.setText(self.config["image_size_thresh"])
         self.comboBox.setCurrentText(self.config["window_size"])

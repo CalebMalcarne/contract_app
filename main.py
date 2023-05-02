@@ -26,6 +26,7 @@ class MainWindow(QMainWindow):
         self.setAcceptDrops(True)
         # Create a central widget and set it as the central widget for the main window
         central_widget = QWidget(self)
+        self.setWindowTitle("Contract Filler")
         self.setCentralWidget(central_widget)
         self.setMaximumSize(QSize(16777215, 16777215))
         
@@ -241,10 +242,14 @@ class MainWindow(QMainWindow):
                 sublist[0] = "No Data"
             if sublist[1] == '':
                 sublist[1] = "No Data"
+                
+        ImagePaths = self.textEdit_3.toPlainText().split('\n')
+        ImagePaths.remove(ImagePaths[len(ImagePaths) - 1])
+        print(ImagePaths)
 
         out_path = str(QFileDialog.getExistingDirectory(self, "Select Directory"))
         print(out_path)
-        export = doc(data, allowanceData, out_path)
+        export = doc(data, allowanceData, ImagePaths ,out_path)
         if(len(out_path) > 0 ):
             export.fill_contract()
    

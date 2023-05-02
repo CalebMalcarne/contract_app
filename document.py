@@ -16,10 +16,11 @@ import os
 
 class doc():
     
-    def __init__(self, data, allow_data, outpath):
+    def __init__(self, data, allow_data, ImagePaths ,outpath):
         self.data = data
         self.allow_data = allow_data
         self.outpath = outpath
+        self.ImagePaths = ImagePaths
         
         self.contract_info = contract_info
         self.allowances = allowances
@@ -149,22 +150,25 @@ performed on a time and material basis at ${hourly_rate}/man/hour.'''
         
         for image in imageLis:
             path = image.getDir()
-            name = image.getName()
-            description = image.getDescription()
-            
-            paragraph = document.add_paragraph()
-            paragraph.add_run(text = name, style = None).bold = True
-            
-            pic_paragraph = document.add_paragraph()
-            run = pic_paragraph.add_run()
-            run.add_picture(path)
-            
-            desc_paragraph = document.add_paragraph()
-            desc_paragraph.add_run(text = f"Description: \n{description}\n", style = None)
-            
-            if("temp" in path):
-                os.remove(path)
+            if path in self.ImagePaths:
+                name = image.getName()
+                description = image.getDescription()
                 
+                paragraph = document.add_paragraph()
+                paragraph.add_run(text = name, style = None).bold = True
+                
+                pic_paragraph = document.add_paragraph()
+                run = pic_paragraph.add_run()
+                run.add_picture(path)
+                
+                desc_paragraph = document.add_paragraph()
+                desc_paragraph.add_run(text = f"Description: \n{description}\n", style = None)
+                
+                if("temp" in path):
+                    os.remove(path)
+            else:
+                if("temp" in path):
+                    os.remove(path) 
             
     
         document.save(self.outpath + f"/{client} Contract.docx")
